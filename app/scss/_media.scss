@@ -1,0 +1,22 @@
+@media screen and (max-width:1200px){
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header__menu__item a{
+        font-size: 12px;
+    }
+    .header__right__phone{
+        font-size: 12px;
+    }
+    .header__right{
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme";
+@import "../../node_modules/slick-carousel/slick/slick";
+
+
+@import "../scss/variables";
+@import "../scss/global";
+@import "../scss/media";
+
+@import "../scss/include/home";
+@import "../scss/include/single";
+@import "../scss/include/contact";

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="images/svg/cordaweb-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style-dark.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="css/style.css" media="(prefers-color-scheme: dark)">
+    <title>CordaWeb</title>
+</head>
+<body dark>
+    <div class="application">
+        <span class="application__close">&#43;</span>
+        <label for="application-form" class="application-label">Залишити заявку</label>
+        <form action="" id="application-form">
+            <input type="text" placeholder="Як Вас звати?">
+            <input type="text" placeholder="Сайт">
+            <input type="text" placeholder="Телефон">
+            <div class="application__checkbox">
+                
+                <label for="application__checkbox__label">
+                    <input type="checkbox" name="" id="application__checkbox__label" class="application__checkbox__real">
+                    <span class="application__checkbox__custom"></span>
+                    <span class="application__checkbox__custom__label">Я погоджуюсь на обробку персональних даних <a href="">політикою конфіденційності</a></span> 
+                </label>
+            </div>
+            <input type="submit" value="Відправити">
+        </form>
+    </div>
+    <div class="bg-images"></div>
+    <header class="header fl-3">
+        <div class="header__logo">
+            <a href="#"><img src="images/svg/cordaweb-logo.svg" alt="CardaWeb"></a>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu__list fl-1">
+                <li class="header__menu__item"><a href="#">Про нас</a></li>
+                <li class="header__menu__item submenu"><a href="#">Послуги<i>&#751;</i></a>
+                    <ul class="submenu-list">
+                        <li class="submenu__item"><a href="">Розробка сайтів</a></li>
+                        <li class="submenu__item"><a href="">SEO</a></li>
+                        <li class="submenu__item"><a href="">Кон реклама</a></li>
+                        <li class="submenu__item"><a href="">Маркетинг в соцмережах</a></li>
+                        <li class="submenu__item"><a href="">Супровід маркетолога</a></li>
+                        
+                    </ul></li>
+                <li class="header__menu__item"><a href="#">Кейси</a></li>
+                <li class="header__menu__item"><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="header__right fl-1">
+            <p class="header__right__phone"><i></i>098 123 23 45</p>
+            <div class="header__right__lang">
+                <ul class="lang-switcher fl-1">
+                    <li class="lang-switcher__item current-lang lang-switcher__item__uk">
+                        <a lang="uk" hreflang="uk" href="#">UA</a>
+                    </li>
+                    <li class="lang-swither__item lang-swither__item__en">
+                        <a lang="en" hreflang="en" href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
+            <fieldset class="header__switcher-theme">
+                <input type="checkbox" class="header__switcher-theme__dark" checked>
+                <input type="checkbox" class="header__switcher-theme__light">
+            </fieldset>
+        </div>
+    </header>
+    <section class="about">
+        <div class="container">
+            <h1 class="about__title"><span>Агенція </span>інтернет  маркетингу</h1>
+            <div class="about__text">
+                <p>Корда Веб — інтернет маркетинг нового покоління</p>
+                <p>
+                    Ми — колаборація спеціалістів різних напрямків інтернет маркетингу — які професіонали кожен в своїй галузі.
+                </p>
+                
+                <div class="about__btn">
+                    <a href="#" class="application-btn">Залишити заявку</a>
+                    <a href="#">Заповнити бриф</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="slider">
+        <div class="container">
+            <ul class="slider__list">
+                <li class="slider__item">
+                    <div class="slider__item__img"><img src="images/img-slider.png" alt=""></div>
+                    <div class="slider__item__text">
+                        <h3>Завдання</h3>
+                        <p>
+                            Завдяки правильно спроектованій SEO стратегії, Workhard зазнає значного зростання органічного трафіку. 
+                            За останній рік, відколи були впроваджені оптимізаційні заходи, відвідувачів з пошукових систем збільшилось на 40%.
+                        </p>
+                        <h3>Покращення рейтингу в пошукових системах:</h3>
+                        <p>
+                            Стратегія SEO дозволила сайту Workhard піднятись у пошукових системах. Ключові слова, пов'язані з діяльністю сайту, 
+                            показують значне покращення в позиціях. Наприклад, ключове слово "онлайн курси саморозвитку" піднялось з 10-ї на 2-у 
+                            позицію у результатах пошуку
+                        </p>
+                    </div>
+                </li>
+                <li class="slider__item">
+                    <div class="slider__item__img"><img src="images/img-slider.png" alt=""></div>
+                    <div class="slider__item__text">
+                        <h3>Завдання</h3>
+                        <p>
+                            Завдяки правильно спроектованій SEO стратегії, Workhard зазнає значного зростання органічного трафіку. 
+                            За останній рік, відколи були впроваджені оптимізаційні заходи, відвідувачів з пошукових систем збільшилось на 40%.
+                        </p>
+                        <h3>Покращення рейтингу в пошукових системах:</h3>
+                        <p>
+                            Стратегія SEO дозволила сайту Workhard піднятись у пошукових системах. Ключові слова, пов'язані з діяльністю сайту, 
+                            показують значне покращення в позиціях. Наприклад, ключове слово "онлайн курси саморозвитку" піднялось з 10-ї на 2-у 
+                            позицію у результатах пошуку
+                        </p>
+                    </div>
+                </li>
+                <li class="slider__item">
+                    <div class="slider__item__img"><img src="images/img-slider.png" alt=""></div>
+                    <div class="slider__item__text">
+                        <h3>Завдання</h3>
+                        <p>
+                            Завдяки правильно спроектованій SEO стратегії, Workhard зазнає значного зростання органічного трафіку. 
+                            За останній рік, відколи були впроваджені оптимізаційні заходи, відвідувачів з пошукових систем збільшилось на 40%.
+                        </p>
+                        <h3>Покращення рейтингу в пошукових системах:</h3>
+                        <p>
+                            Стратегія SEO дозволила сайту Workhard піднятись у пошукових системах. Ключові слова, пов'язані з діяльністю сайту, 
+                            показують значне покращення в позиціях. Наприклад, ключове слово "онлайн курси саморозвитку" піднялось з 10-ї на 2-у 
+                            позицію у результатах пошуку
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__block">
+                <h3 class="advantages__name">переваги</h3>
+                <h3 class="advantages__title">Переваги роботи з нами неоціненні</h3>
+                <p class="advantages__desc">
+                    Не можливо порівнювати нас з іншими агенціями бо ми обрали свій шлях і пропонуємо вам:
+                </p>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <picture class="advantages__item__img"><img src="images/svg/reporting.svg" alt=""></picture>
+                        <div class="advantages__item__desc">
+                            <h3>Аналіз</h3>
+                            <p>
+                                Глибоке занурення в проект, замість поверхневого аналізу. Ми не просто вивчаємо 
+                                технічні показники — ми відслідковуємо весь шлях клієнта, оцінюємо всі аспекти 
+                                роботи Вашого бізнеса та знаходимо «слабкі місця», щоб покращити результати роботи 
+                                інтернет — маркетингу в цілому.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <picture class="advantages__item__img"><img src="images/svg/seo.svg" alt=""></picture>
+                        <div class="advantages__item__desc">
+                            <h3>Оптимізація</h3>
+                            <p>
+                                Ми не перетягуємо ковдру на користь одного з методів просування 
+                                (наприклад контекстної реклами) ми вдало поєднуємо їх оптимізуючи бюджети.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <picture class="advantages__item__img"><img src="images/svg/calculator.svg" alt=""></picture>
+                        <div class="advantages__item__desc">
+                            <h3>Ваш прибуток</h3>
+                            <p>
+                                Нас не цікавлять суто цифри у комп’ютері - ми вміємо рахувати прибуток
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <picture class="advantages__item__img"><img src="images/svg/rocket.svg" alt=""></picture>
+                        <div class="advantages__item__desc">
+                            <h3>Команда</h3>
+                            <p>
+                                Ми не «відпрацьовуємо заробітну плату» - в нас сталий колектив — де всі 
+                                партнери, а не підлеглі - тож кожен спеціаліст працює задля власної вигоди, 
+                                а отже зацікавлений у результаті
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="bg-images-center"></div>
+            <h3 class="services__name">послуги</h3>
+            <h3 class="services__title"> ми пропонуємо</h3>
+            <ul class="services__list">
+                <li class="services__item animate__left animate__animated">
+                    <picture class="services__item__img">
+                        <img src="images/wd.png" alt="">
+                    </picture>
+                    <h3 class="services__item__title">Розробка сайтів <br>
+                        «під ключ» </h3>
+                    <p class="services__item__desc">
+                        Глибоке занурення в проект, замість поверхневого аналізу. Ми не просто вивчаємо технічні показники 
+                    </p>
+                </li>
+                <li class="services__item animate__right animate__animated">
+                    <picture class="services__item__img">
+                        <img src="images/seo.png" alt="">
+                    </picture>
+                    <h3 class="services__item__title">Пошукова оптимізація<br> сайтів</h3>
+                    <p class="services__item__desc">
+                        Глибоке занурення в проект, замість поверхневого аналізу. Ми не просто вивчаємо технічні показники 
+                    </p>
+                </li>
+                <li class="services__item animate__left animate__animated">
+                    <picture class="services__item__img">
+                        <img src="images/ads.png" alt="">
+                    </picture>
+                    <h3 class="services__item__title">Контекстна<br> реклама</h3>
+                    <p class="services__item__desc">
+                        Глибоке занурення в проект, замість поверхневого аналізу. Ми не просто вивчаємо технічні показники 
+                    </p>
+                </li>
+                <li class="services__item animate__right animate__animated">
+                    <picture class="services__item__img">
+                        <img src="images/smm.png" alt="">
+                    </picture>
+                    <h3 class="services__item__title">Маркетинг у соціальних<br> мережах</h3>
+                    <p class="services__item__desc">
+                        Глибоке занурення в проект, замість поверхневого аналізу. Ми не просто вивчаємо технічні показники 
+                    </p>
+                </li>
+                <li class="services__item animate__left animate__animated">
+                    <picture class="services__item__imgc">
+                        <img src="images/smm.png" alt="">
+                    </picture>
+                    <div class="services__item__box">
+                        <h3 class="services__item__name">нова послуга</h3>
+                        <h3 class="services__item__title">Супровід <br> маркетолога</h3>
+                        <p>Якщо Ви не маєте маркетолога в штаті, то ми пропонуємо  нову послугу «Супровід маркетолога»</p>
+                        <ul>
+                            <li>Вивчення ринку, побудова стратегії просування, контроль показників ефективності та оптимізація процесів роботи команди. </li>
+                            <li>Ми зацікавлені в результатах — а значить потребуємо зворотнього зв’язку.</li>
+                        </ul>
+                        <a href="#">Детальніше</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <section class="cooperation">
+        <div class="container">
+            <h3 class="cooperation__name">кроки співпраці</h3>
+            <h3 class="cooperation__title">як почати <br>працювати?</h3>
+            <ul class="cooperation__list">
+                <li class="cooperation__item animate__left animate__animated">
+                    <svg width="" height="85"  viewBox="0 0 123 95"  xmlns="http://www.w3.org/2000/svg">
+                        <path class="number" d="M39.07 94.56C31.53 94.56 24.8133 92.6967 18.92 88.97C13.0267 85.2433 8.39 79.87 5.01 72.85C1.71667 65.7433 0.0700001 57.2933 0.0700001 47.5C0.0700001 37.7067 1.71667 29.3 5.01 22.28C8.39 15.1733 13.0267 9.75666 18.92 6.03C24.8133 2.30333 31.53 0.439998 39.07 0.439998C46.61 0.439998 53.3267 2.30333 59.22 6.03C65.1133 9.75666 69.7067 15.1733 73 22.28C76.38 29.3 78.07 37.7067 78.07 47.5C78.07 57.2933 76.38 65.7433 73 72.85C69.7067 79.87 65.1133 85.2433 59.22 88.97C53.3267 92.6967 46.61 94.56 39.07 94.56ZM39.07 76.75C44.6167 76.75 48.95 74.3667 52.07 69.6C55.2767 64.8333 56.88 57.4667 56.88 47.5C56.88 37.5333 55.2767 30.1667 52.07 25.4C48.95 20.6333 44.6167 18.25 39.07 18.25C33.61 18.25 29.2767 20.6333 26.07 25.4C22.95 30.1667 21.39 37.5333 21.39 47.5C21.39 57.4667 22.95 64.8333 26.07 69.6C29.2767 74.3667 33.61 76.75 39.07 76.75ZM122.641 1.99999V93H101.581V18.9H83.3807V1.99999H122.641Z" fill="#E61776"/>
+                    </svg>
+                    <h3 class="cooperation__item__title">зв'язатись з нами</h3>
+                    <p class="cooperation__item__desc">
+                        Ви залишаєте заявку, або телефонуєте нам за номером, який Ви бачите на сайті
+                    </p>
+                    <a  class="application-btn">Залишити заявку</a>
+                </li>
+                <li class="cooperation__item animate__right animate__animated">
+                    <svg width="156" height="85"  viewBox="0 0 156 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="number" d="M39.07 94.56C31.53 94.56 24.8133 92.6967 18.92 88.97C13.0267 85.2433 8.39 79.87 5.01 72.85C1.71667 65.7433 0.0700001 57.2933 0.0700001 47.5C0.0700001 37.7067 1.71667 29.3 5.01 22.28C8.39 15.1733 13.0267 9.75666 18.92 6.03C24.8133 2.30333 31.53 0.439998 39.07 0.439998C46.61 0.439998 53.3267 2.30333 59.22 6.03C65.1133 9.75666 69.7067 15.1733 73 22.28C76.38 29.3 78.07 37.7067 78.07 47.5C78.07 57.2933 76.38 65.7433 73 72.85C69.7067 79.87 65.1133 85.2433 59.22 88.97C53.3267 92.6967 46.61 94.56 39.07 94.56ZM39.07 76.75C44.6167 76.75 48.95 74.3667 52.07 69.6C55.2767 64.8333 56.88 57.4667 56.88 47.5C56.88 37.5333 55.2767 30.1667 52.07 25.4C48.95 20.6333 44.6167 18.25 39.07 18.25C33.61 18.25 29.2767 20.6333 26.07 25.4C22.95 30.1667 21.39 37.5333 21.39 47.5C21.39 57.4667 22.95 64.8333 26.07 69.6C29.2767 74.3667 33.61 76.75 39.07 76.75ZM155.531 75.84V93H86.7607V79.35L121.861 46.2C125.587 42.6467 128.101 39.6133 129.401 37.1C130.701 34.5 131.351 31.9433 131.351 29.43C131.351 25.79 130.094 23.0167 127.581 21.11C125.154 19.1167 121.557 18.12 116.791 18.12C112.804 18.12 109.207 18.9 106.001 20.46C102.794 21.9333 100.107 24.1867 97.9407 27.22L82.6007 17.34C86.154 12.0533 91.0507 7.93666 97.2907 4.98999C103.531 1.95666 110.681 0.439998 118.741 0.439998C125.501 0.439998 131.394 1.56666 136.421 3.81999C141.534 5.98666 145.477 9.10666 148.251 13.18C151.111 17.1667 152.541 21.89 152.541 27.35C152.541 32.29 151.501 36.9267 149.421 41.26C147.341 45.5933 143.311 50.5333 137.331 56.08L116.401 75.84H155.531Z" stroke="#E51776"/>   
+                    </svg>
+                    <h3 class="cooperation__item__title">вивчаємо проект</h3>
+                    <p class="cooperation__item__desc">
+                        Ми вивчаємо ваш проект (для цього Ви заповнюєте невеличку анкету) 
+                        на протязі трьох робочих днів та готуємо комерційну пропозицію з 
+                        урахуванням побажань та стартових даних проекту
+                    </p>
+                
+                </li>
+                <li class="cooperation__item animate__left animate__animated">
+                    <svg width="155" height="85" viewBox="0 0 155 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="number" d="M39.07 94.56C31.53 94.56 24.8133 92.6967 18.92 88.97C13.0267 85.2433 8.39 79.87 5.01 72.85C1.71667 65.7433 0.0700001 57.2933 0.0700001 47.5C0.0700001 37.7067 1.71667 29.3 5.01 22.28C8.39 15.1733 13.0267 9.75666 18.92 6.03C24.8133 2.30333 31.53 0.439998 39.07 0.439998C46.61 0.439998 53.3267 2.30333 59.22 6.03C65.1133 9.75666 69.7067 15.1733 73 22.28C76.38 29.3 78.07 37.7067 78.07 47.5C78.07 57.2933 76.38 65.7433 73 72.85C69.7067 79.87 65.1133 85.2433 59.22 88.97C53.3267 92.6967 46.61 94.56 39.07 94.56ZM39.07 76.75C44.6167 76.75 48.95 74.3667 52.07 69.6C55.2767 64.8333 56.88 57.4667 56.88 47.5C56.88 37.5333 55.2767 30.1667 52.07 25.4C48.95 20.6333 44.6167 18.25 39.07 18.25C33.61 18.25 29.2767 20.6333 26.07 25.4C22.95 30.1667 21.39 37.5333 21.39 47.5C21.39 57.4667 22.95 64.8333 26.07 69.6C29.2767 74.3667 33.61 76.75 39.07 76.75ZM129.543 39.05C137.516 40.35 143.626 43.34 147.873 48.02C152.12 52.6133 154.243 58.3333 154.243 65.18C154.243 70.4667 152.856 75.3633 150.083 79.87C147.31 84.29 143.063 87.8433 137.343 90.53C131.71 93.2167 124.776 94.56 116.543 94.56C110.13 94.56 103.803 93.7367 97.5629 92.09C91.4096 90.3567 86.1662 87.93 81.8329 84.81L90.0229 68.69C93.4896 71.29 97.4762 73.3267 101.983 74.8C106.576 76.1867 111.256 76.88 116.023 76.88C121.31 76.88 125.47 75.8833 128.503 73.89C131.536 71.81 133.053 68.9067 133.053 65.18C133.053 57.7267 127.376 54 116.023 54H106.403V40.09L125.123 18.9H86.3829V1.99999H150.083V15.65L129.543 39.05Z" stroke="#E51776"/>
+                    </svg>
+                    <h3 class="cooperation__item__title">Проводимо зустріч</h3>
+                    <p class="cooperation__item__desc">
+                        Ми проводимо зустріч в форматі онлайн для того щоб представити команду,
+                        яка працюватиме на проекті та обговорити деталі
+                    </p>
+                
+                </li>
+                <li class="cooperation__item animate__right animate__animated">
+                    <svg width="155" height="85" viewBox="0 0 172 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="number" d="M39.07 94.56C31.53 94.56 24.8133 92.6967 18.92 88.97C13.0267 85.2433 8.39 79.87 5.01 72.85C1.71667 65.7433 0.0700001 57.2933 0.0700001 47.5C0.0700001 37.7067 1.71667 29.3 5.01 22.28C8.39 15.1733 13.0267 9.75666 18.92 6.03C24.8133 2.30333 31.53 0.439998 39.07 0.439998C46.61 0.439998 53.3267 2.30333 59.22 6.03C65.1133 9.75666 69.7067 15.1733 73 22.28C76.38 29.3 78.07 37.7067 78.07 47.5C78.07 57.2933 76.38 65.7433 73 72.85C69.7067 79.87 65.1133 85.2433 59.22 88.97C53.3267 92.6967 46.61 94.56 39.07 94.56ZM39.07 76.75C44.6167 76.75 48.95 74.3667 52.07 69.6C55.2767 64.8333 56.88 57.4667 56.88 47.5C56.88 37.5333 55.2767 30.1667 52.07 25.4C48.95 20.6333 44.6167 18.25 39.07 18.25C33.61 18.25 29.2767 20.6333 26.07 25.4C22.95 30.1667 21.39 37.5333 21.39 47.5C21.39 57.4667 22.95 64.8333 26.07 69.6C29.2767 74.3667 33.61 76.75 39.07 76.75ZM171.632 73.89H156.812V93H136.272V73.89H87.2624V59.72L130.162 1.99999H152.262L112.482 56.73H136.922V39.7H156.812V56.73H171.632V73.89Z" stroke="#E51776"/>
+                    </svg>  
+                    <h3 class="cooperation__item__title">підписуємо договір</h3>
+                    <p class="cooperation__item__desc">
+                        Підписуємо договір та виставляємо рахунок. Після узгодження всіх формальностей 
+                        переходимо безпосередньо до роботи по проекту.
+                    </p>
+                
+                </li>
+                <li class="cooperation__item animate__left animate__animated">
+                    <div class="cooperation__item__last">
+                        <picture class="cooperation__last__img"><img src="images/svg/reporting.svg" alt=""></picture>
+                        <div class="cooperation__last__desc">
+                            <h3>Звітність</h3>
+                            <p>
+                                Звітність ми надаємо помісячно у вигляді звітів та таблиці ефективності. 
+                                Показники на які орієнтуємося узгоджуються заздалегідь персоналізовано до кожного проекту.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cooperation__item__last">
+                        <picture class="cooperation__last__img"><img src="images/svg/reporting.svg" alt=""></picture>
+                        <div class="cooperation__last__desc">
+                            <h3>Бюджет проекту</h3>
+                            <p>
+                                Бюджет затверджується на початку співпраці, 
+                                ми дотримуємося визначених цифр і досягаємо максимального результату в рамках затверджених витрат.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <section class="price">
+        <div class="container">
+            <div class="price__item">
+                <picture class="price__item__img">
+                    <img src="images/price.png" alt="">
+                </picture>
+                <div class="price__item__box">
+                    <h3 class="price__item__name">Ціни</h3>
+                    <h3 class="price__item__title">Завантажте прайс цін на наші послуги</h3>
+                    <p>Якщо Ви не маєте маркетолога в штаті, то ми пропонуємо  нову послугу «Супровід маркетолога»</p>
+                    <a href="images/price.png" download>Завантажити PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h3 class="reviews__name">Відгуки</h3>
+        <h3 class="reviews__title">Що пишуть <br>про нас клієнти</h3>
+        <a href="#" class="reviews__more">Всі відгуки</a>
+        <ul class="reviews__list">
+            <li class="reviews__item">
+                <h3 class="reviews__item__name">Олександр Литвиненко</h3>
+                <p class="reviews__item__text">
+                    Cordaweb - професійні фахівці з інтернет-маркетингу, які зосереджуються 
+                    на деталях та піклуються про успіх своїх клієнтів. Їх робота призвела до 
+                    збільшення трафіку та продажів. Рекомендую їх послуги.
+                </p>
+                <button class="reviews__item__btn">Читати відгук 
+                    <svg width="14" height="14"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow" d="M4 16L16 4M16 4L7.33333 4M16 4V12.6667" stroke="#FAFAF2" stroke-width="2"/>
+                    </svg>
+                </button>
+            </li>
+            <li class="reviews__item">
+                <h3 class="reviews__item__name">Анастасія Гриценко</h3>
+                <p class="reviews__item__text">
+                    Cordaweb - надійна компанія з інтернет-маркетингу, яка допомогла моєму 
+                    бізнесу отримати краще представлення в Інтернеті. Їх професіоналізм та увага 
+                    до деталей залишили на мені чудові враження. Я дуже задоволена результатами 
+                    їх роботи та рекомендую їх послуги.
+
+
+                </p>
+                <button class="reviews__item__btn">Читати відгук 
+                    <svg width="14" height="14"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow" d="M4 16L16 4M16 4L7.33333 4M16 4V12.6667" stroke="#FAFAF2" stroke-width="2"/>
+                    </svg>
+                </button>
+            </li>
+            <li class="reviews__item">
+                <h3 class="reviews__item__name">Олександр Литвиненко</h3>
+                <p class="reviews__item__text">
+                    Cordaweb - професійні фахівці з інтернет-маркетингу, які зосереджуються 
+                    на деталях та піклуються про успіх своїх клієнтів. Їх робота призвела до 
+                    збільшення трафіку та продажів. Рекомендую їх послуги.
+                </p>
+                <button class="reviews__item__btn">Читати відгук 
+                    <svg width="14" height="14"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow" d="M4 16L16 4M16 4L7.33333 4M16 4V12.6667" stroke="#FAFAF2" stroke-width="2"/>
+                    </svg>
+                </button>
+            </li>
+            <li class="reviews__item">
+                <h3 class="reviews__item__name">Анастасія Гриценко</h3>
+                <p class="reviews__item__text">
+                    Cordaweb - надійна компанія з інтернет-маркетингу, яка допомогла моєму 
+                    бізнесу отримати краще представлення в Інтернеті. Їх професіоналізм та увага 
+                    до деталей залишили на мені чудові враження. Я дуже задоволена результатами 
+                    їх роботи та рекомендую їх послуги.
+
+
+                </p>
+                <button class="reviews__item__btn">Читати відгук 
+                    <svg width="14" height="14"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="arrow" d="M4 16L16 4M16 4L7.33333 4M16 4V12.6667" stroke="#FAFAF2" stroke-width="2"/>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        </div>
+        
+    </section>
+    <footer class="footer">
+        <div class="footer__box">
+            <div class="footer__left">
+                <div class="footer__left__agency footer__menu">
+                    <label for="">агенція</label>
+                    <ul class="footer__left__list">
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Кейси</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Супровід маркетолога</a></li>
+                    </ul>
+                </div>
+                <div class="footer__left__logo-box">
+                    <div class="footer__logo">
+                        <img src="images/svg/cordaweb-logo.svg" alt="">
+                    </div>
+                    <p>
+                        Ми творчі та професіональні, вимогливі як до себе так і до наших клієнтів, тому 
+                        успіх — це те до чого ми прямуємо разом. 
+                        
+                    </p>
+                    <p>Приєднуйтесь до нашого шляху — досягнемо висот пліч о пліч!</p>
+                </div>
+            </div>
+            <div class="footer__rigth">
+                <div class="footer__right__services footer__menu">
+                    <label for="">Послуги</label>
+                    <ul class="footer__rigth__list">
+                        <li><a href="#">Сайт під ключ</a></li>
+                        <li><a href="#">SEO оптимізація</a></li>
+                        <li><a href="#">PPC</a></li>
+                        <li><a href="#">SMM</a></li>
+                    </ul>
+                </div>
+                <div class="footer__right__contact">
+                    <ul class="footer__contact">
+                        <li>
+                            <a href="#"><i></i>098 123 23 45</a>
+                        </li>
+                        <li>
+                            <span><i></i>info@cordaweb.com</span>
+                        </li>
+                        <li>
+                            <span>ми в соц. мережах:</span>
+                            <div>
+                                <a href="#">
+                                    <img src="images/svg/facebook.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/svg/instagram.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="images/svg/twiter.svg" alt="">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer__copyright">© Корда Веб агенція 2023. Всі права захищенні. </span>
+        </div>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
