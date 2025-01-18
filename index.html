@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="plugins/swipper/swiper-bundle.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>CordaWeb | Головна</title>
+    <script src="scripts/jquery.3.7.1.js" defer></script>
+    
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="plugins/swipper/swiper-bundle.js" ></script>
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner-big">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/icon/logo-dark.svg" alt="">
+                        </a>
+                   </div>
+                   <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link is-active">Про нас</a>
+                        </li>
+                        <li class="menu__item dropdown">
+                            <a href="" class="menu__link ">Послуги</a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Сайт під ключ</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">SEO оптимізація</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">PPC</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">SMM</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Супровід маркетолога</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Кейси</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                   </nav>
+                </div>
+                <div class="header__right">
+                    <div class="phone">
+                        <a href="tel+" class="phone__link">098 123 23 45</a>
+                    </div>
+                    <div class="lang">
+                        <ul class="lang__list">
+                            <li class="lang__item is-active">UA</li>
+                            <li class="lang__item">EN</li>
+                        </ul>
+                    </div>
+                    <div class="theme">
+                        <ul class="theme__list">
+                            <li class="theme__item theme-dark">
+                                <svg width="14" class="icon-theme-dark" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 7.1817C12.1657 7.60055 11.2174 7.83729 10.2117 7.83729C6.87307 7.83729 4.16653 5.2281 4.16653 2.00949C4.16653 1.66521 4.19752 1.3279 4.25691 1C2.32161 1.97161 1 3.92313 1 6.17221C1 9.39081 3.70655 12 7.04519 12C10.0267 12 12.5041 9.91915 13 7.1817Z" stroke=""/>
+                                </svg>
+                                    
+                            </li>
+                            <li class="theme__item theme-light is-active">
+                                <svg width="18" class="icon-theme-light" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1L11.1124 3.90018L14.6569 3.34315L14.0998 6.88759L17 9L14.0998 11.1124L14.6569 14.6569L11.1124 14.0998L9 17L6.88759 14.0998L3.34315 14.6569L3.90018 11.1124L1 9L3.90018 6.88759L3.34315 3.34315L6.88759 3.90018L9 1Z" stroke=""/>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
+               <nav class="mobile-menu animate__animated animate__fadeInLeft">
+                    <span class="mobile-menu__close"></span>
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item">
+                            <a href="" class="mobile-menu__link">Про нас</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="mobile-menu__link dropdown">Послуги</a>
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Сайт під ключ</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">SEO оптимізація</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">PPC</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">SMM</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="#" class="submenu__link">Супровід маркетолога</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="mobile-menu__link">Кейси</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="" class="mobile-menu__link">>Контакти</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__bottom">
+                        <div class="lang">
+                            <ul class="lang__list">
+                                <li class="lang__item is-active">UA</li>
+                                <li class="lang__item">EN</li>
+                            </ul>
+                        </div>
+                        <div class="theme">
+                            <ul class="theme__list">
+                                <li class="theme__item theme-dark">
+                                    <svg width="14" class="icon-theme-dark" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 7.1817C12.1657 7.60055 11.2174 7.83729 10.2117 7.83729C6.87307 7.83729 4.16653 5.2281 4.16653 2.00949C4.16653 1.66521 4.19752 1.3279 4.25691 1C2.32161 1.97161 1 3.92313 1 6.17221C1 9.39081 3.70655 12 7.04519 12C10.0267 12 12.5041 9.91915 13 7.1817Z" stroke=""/>
+                                    </svg>
+                                        
+                                </li>
+                                <li class="theme__item theme-light is-active">
+                                    <svg width="18" class="icon-theme-light" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 1L11.1124 3.90018L14.6569 3.34315L14.0998 6.88759L17 9L14.0998 11.1124L14.6569 14.6569L11.1124 14.0998L9 17L6.88759 14.0998L3.34315 14.6569L3.90018 11.1124L1 9L3.90018 6.88759L3.34315 3.34315L6.88759 3.90018L9 1Z" stroke=""/>
+                                    </svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                   
+               </nav>
+            </div>
+        </div>
+    </header>
+    <main class="home-page">
+        <section class="hero">
+            <div class="conteiner">
+                <div class="hero__wrapper">
+                    <h1 class="hero__title"><span>Агенція</span> інтернет  маркетингу</h1>
+                    <div class="hero__description">
+                        <div class="hero__text">
+                            <p>
+                                Корда Веб — інтернет маркетинг нового покоління
+                            </p>
+                            <p>
+                                Ми — колаборація спеціалістів різних напрямків інтернет маркетингу — які 
+                                професіонали кожен в своїй галузі.
+                            </p>
+                        </div>
+                        <div class="hero__button">
+                            <button class="button button-bg">Залишити заявку</button>
+                            <a href="" class="button button-tr" target="_blank">Заповнити бриф</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cases">
+            <div class="conteiner">
+                <div class="cases__slider slider">
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image">
+                                <img src="images/img/case-1.png" alt="" class="case-img">
+                            </div>
+                            <div class="slider__description">
+                                <h3>Завдання</h3>
+                                <p>
+                                    Завдяки правильно спроектованій SEO стратегії, Workhard 
+                                    зазнає значного зростання органічного трафіку. За останній 
+                                    рік, відколи були впроваджені оптимізаційні заходи, 
+                                    відвідувачів з пошукових систем збільшилось на 40%.
+                                </p>
+                                <h3>Покращення рейтингу в пошукових системах:</h3>
+                                <p>
+                                    Стратегія SEO дозволила сайту Workhard піднятись у пошукових 
+                                    системах. Ключові слова, пов'язані з діяльністю сайту, показують 
+                                    значне покращення в позиціях. Наприклад, ключове слово "онлайн 
+                                    курси саморозвитку" піднялось з 10-ї на 2-у позицію у 
+                                    результатах пошуку
+                                </p>
+
+                               
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image">
+                                <img src="images/img/case-1.png" alt="" class="case-img">
+                            </div>
+                            <div class="slider__description">
+                                <h3>Завдання</h3>
+                                <p>
+                                    Завдяки правильно спроектованій SEO стратегії, Workhard 
+                                    зазнає значного зростання органічного трафіку. За останній 
+                                    рік, відколи були впроваджені оптимізаційні заходи, 
+                                    відвідувачів з пошукових систем збільшилось на 40%.
+                                </p>
+                                <h3>Покращення рейтингу в пошукових системах:</h3>
+                                <p>
+                                    Стратегія SEO дозволила сайту Workhard піднятись у пошукових 
+                                    системах. Ключові слова, пов'язані з діяльністю сайту, показують 
+                                    значне покращення в позиціях. Наприклад, ключове слово "онлайн 
+                                    курси саморозвитку" піднялось з 10-ї на 2-у позицію у 
+                                    результатах пошуку
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image">
+                                <img src="images/img/case-1.png" alt="" class="case-img">
+                            </div>
+                            <div class="slider__description">
+                                <h3>Завдання</h3>
+                                <p>
+                                    Завдяки правильно спроектованій SEO стратегії, Workhard 
+                                    зазнає значного зростання органічного трафіку. За останній 
+                                    рік, відколи були впроваджені оптимізаційні заходи, 
+                                    відвідувачів з пошукових систем збільшилось на 40%.
+                                </p>
+                                <h3>Покращення рейтингу в пошукових системах:</h3>
+                                <p>
+                                    Стратегія SEO дозволила сайту Workhard піднятись у пошукових 
+                                    системах. Ключові слова, пов'язані з діяльністю сайту, показують 
+                                    значне покращення в позиціях. Наприклад, ключове слово "онлайн 
+                                    курси саморозвитку" піднялось з 10-ї на 2-у позицію у 
+                                    результатах пошуку
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__image">
+                                <img src="images/img/case-1.png" alt="" class="case-img">
+                            </div>
+                            <div class="slider__description">
+                                <h3>Завдання</h3>
+                                <p>
+                                    Завдяки правильно спроектованій SEO стратегії, Workhard 
+                                    зазнає значного зростання органічного трафіку. За останній 
+                                    рік, відколи були впроваджені оптимізаційні заходи, 
+                                    відвідувачів з пошукових систем збільшилось на 40%.
+                                </p>
+                                <h3>Покращення рейтингу в пошукових системах:</h3>
+                                <p>
+                                    Стратегія SEO дозволила сайту Workhard піднятись у пошукових 
+                                    системах. Ключові слова, пов'язані з діяльністю сайту, показують 
+                                    значне покращення в позиціях. Наприклад, ключове слово "онлайн 
+                                    курси саморозвитку" піднялось з 10-ї на 2-у позицію у 
+                                    результатах пошуку
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="slider-arrows">
+                        <div class="slider-arrows__item slider__prev"></div>
+                        <div class="slider-arrows__item slider__next"></divn>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="conteiner">
+                <div class="advantages__wrapper">
+                    <p class="section-subtitle">Переваги</p>
+                    <h2 class="section-title">Переваги роботи з нами неоціненні</h2>
+                    <p class="title-description">
+                        Не можливо порівнювати нас з іншими агенціями бо 
+                        ми обрали свій шлях і пропонуємо вам:
+                    </p>
+                    <div class="advantages__list">
+                        <div class="advantages__item card">
+                            <div class="card__image">
+                                <img src="images/img/search-engine.png" alt="">
+                            </div>
+                            <div class="card__description">
+                                <h3 class="card__title">Аналіз</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Глибоке занурення в проект, замість поверхневого аналізу. 
+                                        Ми не просто вивчаємо технічні показники — ми 
+                                        відслідковуємо весь шлях клієнта, оцінюємо всі аспекти 
+                                        роботи Вашого бізнеса та знаходимо «слабкі місця», 
+                                        щоб покращити результати роботи інтернет — маркетингу 
+                                        в цілому.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__item card">
+                            <div class="card__image">
+                                <img src="images/img/seo.png" alt="">
+                            </div>
+                            <div class="card__description">
+                                <h3 class="card__title">Оптимізація</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Ми не перетягуємо ковдру на користь одного з методів просування 
+                                        (наприклад контекстної реклами) ми вдало поєднуємо їх 
+                                        оптимізуючи бюджети.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__item card">
+                            <div class="card__image">
+                                <img src="images/img/calculator.png" alt="">
+                            </div>
+                            <div class="card__description">
+                                <h3 class="card__title">Ваш прибуток</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Нас не цікавлять суто цифри у комп’ютері - ми вміємо рахувати прибуток
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__item card">
+                            <div class="card__image">
+                                <img src="images/img/rocket.png" alt="">
+                            </div>
+                            <div class="card__description">
+                                <h3 class="card__title">Команда</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Ми не «відпрацьовуємо заробітну плату» - в нас 
+                                        сталий колектив — де всі партнери, а не підлеглі - 
+                                        тож кожен спеціаліст працює задля власної вигоди, 
+                                        а отже зацікавлений у результаті
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="conteiner">
+                <p class="section-subtitle">Послуги</p>
+                <h2 class="section-title"> ми пропонуємо</h2>
+                <div class="services__list ">
+                    <div class="services__item service">
+                        <div class="service__image">
+                            <img src="images/img/wd.png" alt="">
+                        </div>
+                        <div class="service__description">
+                            <h3 class="service__title">Розробка сайтів «під ключ» </h3>
+                            <div class="service__except">
+                                <p>
+                                    Глибоке занурення в проект, замість поверхневого аналізу. 
+                                    Ми не просто вивчаємо технічні показники 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item service">
+                        <div class="service__image">
+                            <img src="images/img/seo (1).png" alt="">
+                        </div>
+                        <div class="service__description">
+                            <h3 class="service__title">Пошукова оптимізація сайтів</h3>
+                            <div class="service__except">
+                                <p>
+                                    Глибоке занурення в проект, замість поверхневого аналізу. 
+                                    Ми не просто вивчаємо технічні показники 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item service">
+                        <div class="service__image">
+                            <img src="images/img/ads.png" alt="">
+                        </div>
+                        <div class="service__description">
+                            <h3 class="service__title">Контекстна реклама</h3>
+                            <div class="service__except">
+                                <p>
+                                    Глибоке занурення в проект, замість поверхневого аналізу. 
+                                    Ми не просто вивчаємо технічні показники 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item service">
+                        <div class="service__image">
+                            <img src="images/img/smm.png" alt="">
+                        </div>
+                        <div class="service__description">
+                            <h3 class="service__title">Маркетинг у соціальних мережах</h3>
+                            <div class="service__except">
+                                <p>
+                                    Глибоке занурення в проект, замість поверхневого аналізу. 
+                                    Ми не просто вивчаємо технічні показники 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item service">
+                        <div class="service__image">
+                            <img src="images/img/smm.png" alt="">
+                        </div>
+                        <div class="service__description">
+                            <p class="section-subtitle">Нова послуга</p>
+                            <h3 class="service__title">Супровід  маркетолога</h3>
+                            <div class="service__except">
+                                <p>
+                                    Якщо Ви не маєте маркетолога в штаті, то ми пропонуємо  нову послугу «Супровід маркетолога»
+                                    Вивчення ринку, побудова стратегії просування, контроль показників ефективності та оптимізація процесів роботи команди. 
+                                    Ми зацікавлені в результатах — а значить потребуємо зворотнього зв’язку.
+                                </p>
+                            </div>
+                            <a href="#" class="button button-bg">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="conteiner">
+                <p class="section-subtitle">Кроки співпраці</p>
+                <h2 class="section-title">як почати працювати?</h2>
+                <div class="steps__wrapper">
+                    <div class="steps__item step">
+                        <div class="step__image">
+                            <svg width="131" height="103" viewBox="0 0 131 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text class="step-icon" fill="" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="130" font-weight="bold" letter-spacing="0em"><tspan x="-1" y="93">01</tspan></text>
+                            </svg>
+                                
+                            
+                        </div>
+                        <h3 class="step__title">зв'язатись з нами</h3>
+                        <div class="step__text">
+                            <p>
+                                Ви залишаєте заявку, або телефонуєте нам за номером, який Ви бачите на сайті
+                            </p>
+                        </div>
+                        <button class="button button-bg">Залишити заявку</button>
+                    </div>
+                    <div class="steps__item step">
+                        <div class="step__image">
+                            <svg width="158" height="97" viewBox="0 0 158 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text class="step-icon" stroke="#E61776" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="130" font-weight="bold" letter-spacing="0em"><tspan x="-4" y="94">02</tspan></text>
+                            </svg>
+                                
+                                
+                        </div>
+                        <h3 class="step__title">вивчаємо проект</h3>
+                        <div class="step__text">
+                            <p>
+                                Ми вивчаємо ваш проект (для цього Ви заповнюєте невеличку анкету) на протязі трьох 
+                                робочих днів та готуємо комерційну пропозицію з урахуванням побажань та стартових 
+                                даних проекту
+                            </p>
+                        </div>
+                    </div>
+                    <div class="steps__item step">
+                        <div class="step__image">
+                            <svg width="157" height="97" viewBox="0 0 157 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text class="step-icon" stroke="#E61776" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="130" font-weight="bold" letter-spacing="0em"><tspan x="-4" y="94">03</tspan></text>
+                            </svg>
+                                
+                        </div>
+                        <h3 class="step__title">Проводимо зустріч</h3>
+                        <div class="step__text">
+                            <p>
+                                Ми проводимо зустріч в форматі онлайн для того щоб представити команду, 
+                                яка працюватиме на проекті та обговорити деталі
+                        </div>
+                    </div>
+                    <div class="steps__item step">
+                        <div class="step__image">
+                            <svg width="174" height="97" viewBox="0 0 174 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text class="step-icon" stroke="#E61776" xml:space="preserve" style="white-space: pre" font-family="Montserrat" font-size="130" font-weight="bold" letter-spacing="0em"><tspan x="-4" y="94">04</tspan></text>
+                            </svg>
+                                
+                                
+                        </div>
+                        <h3 class="step__title">підписуємо договір</h3>
+                        <div class="step__text">
+                            <p>
+                                Підписуємо договір та виставляємо рахунок. Після узгодження всіх 
+                                формальностей переходимо безпосередньо до роботи по проекту.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step__item step">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="images/img/search-engine.png" alt="">
+                            </div>
+                            <div class="card__description">
+                                <h3 class="card__title">Звітність</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Звітність ми надаємо помісячно у вигляді звітів та таблиці ефективності. Показники 
+                                        на які орієнтуємося узгоджуються заздалегідь персоналізовано до кожного проекту.
+                                    </p>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="images/img/search-engine.png" alt="">
+                            </div>
+                            <div class="card__description">
+                                <h3 class="card__title">Бюджет проекту</h3>
+                                <div class="card__text">
+                                    <p>
+                                        Бюджет затверджується на початку співпраці, ми дотримуємося визначених 
+                                        цифр і досягаємо максимального результату в рамках затверджених витрат.
+                                    </p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="conteiner">
+                <div class="price__wrapper">
+                    <div class="price__image">
+                        <img src="images/img/price.png" alt="">
+                    </div>
+                    <div class="price__description">
+                        <p class="section-subtitle">Ціни</p>
+                        <h2 class="section-title">Завантажте прайс цін на наші послуги</h2>
+                        <div class="price__text">
+                            Якщо Ви не маєте маркетолога в штаті, то ми пропонуємо  нову послугу «Супровід маркетолога»
+                        </div>
+                        <a href="images/img/price.png" class="button button-tr" download>Завантажити PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="conteiner">
+                <p class="section-subtitle">Відгуки</p>
+                <h2 class="section-title">Що пишуть про нас клієнти</h2>
+                <div class="reviews__slider slider">
+                    <button class="button button-tr leave-review">Залишити відгук</button>
+                    <div class="slider-arrows">
+                        <div class="slider-arrows__item slider__prev"></div>
+                        <div class="slider-arrows__item slider__next"></div>
+                    </div>
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="review slider__item swiper-slide">
+                            <h3 class="review__author">Олександр Литвиненко</h3>
+                            <div class="review__text">
+                                Cordaweb - професійні фахівці з інтернет-маркетингу,
+                                 які зосереджуються на деталях та піклуються про 
+                                 успіх своїх клієнтів. Їх робота призвела до 
+                                 збільшення трафіку та продажів. Рекомендую їх 
+                                 послуги.
+                            </div>
+                            <button class="button">Читати відгук</button>
+                        </div>
+                        <div class="review slider__item swiper-slide">
+                            <h3 class="review__author">Олександр Литвиненко</h3>
+                            <div class="review__text">
+                                Cordaweb - професійні фахівці з інтернет-маркетингу,
+                                 які зосереджуються на деталях та піклуються про 
+                                 успіх своїх клієнтів. Їх робота призвела до 
+                                 збільшення трафіку та продажів. Рекомендую їх 
+                                 послуги.
+                            </div>
+                            <button class="button">Читати відгук</button>
+                        </div>
+                        <div class="review slider__item swiper-slide">
+                            <h3 class="review__author">Олександр Литвиненко</h3>
+                            <div class="review__text">
+                                Cordaweb - професійні фахівці з інтернет-маркетингу,
+                                 які зосереджуються на деталях та піклуються про 
+                                 успіх своїх клієнтів. Їх робота призвела до 
+                                 збільшення трафіку та продажів. Рекомендую їх 
+                                 послуги.
+                            </div>
+                            <button class="button">Читати відгук</button>
+                        </div>
+                        <div class="review slider__item swiper-slide">
+                            <h3 class="review__author">Олександр Литвиненко</h3>
+                            <div class="review__text">
+                                Cordaweb - професійні фахівці з інтернет-маркетингу,
+                                 які зосереджуються на деталях та піклуються про 
+                                 успіх своїх клієнтів. Їх робота призвела до 
+                                 збільшення трафіку та продажів. Рекомендую їх 
+                                 послуги.
+                            </div>
+                            <button class="button">Читати відгук</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="conteiner-big">
+            <div class="footer__body">
+                <div class="footer__wrapper conteiner">
+                    <div class="footer__menu">
+                        <nav class="menu-footer">
+                            <p class="menu-footer__label">Агенція</p>
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">Про нас</a></li>
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">Кейси</a></li>
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">Контакти</a></li>
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">Супровід маркетолога</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="menu-footer">
+                            <p class="menu-footer__label">Послуги</p>
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">Сайт під ключ</a></li>
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">SEO оптимізація</a></li>
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">PPC</a></li>
+                                <li class="menu-footer__item"><a href="" class="menu-footer__link">SMM</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__about">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/icon/logo-dark.svg" alt="">
+                                </a>
+                           </div>
+                           <div class="footer__about__text">
+                                <p>
+                                    Ми творчі та професіональні, вимогливі як до себе так і до наших клієнтів, 
+                                    тому успіх — це те до чого ми прямуємо разом. 
+                                </p>
+                                <p>
+                                    Приєднуйтесь до нашого шляху — досягнемо висот пліч о пліч!
+                                </p>
+                           </div>
+                        </div>
+                        <div class="footer__contacts contacts">
+                            <ul class="contacts__list">
+                                <li class="contacts__item phone">
+                                    <a href="tel+" class="phone__link">098 123 23 45</a>
+                                </li>
+                                <li class="contacts__item email">
+                                    info@cordaweb.com
+                                </li>
+                            </ul>
+                            <div class="social">
+                                <p class="social__label">ми в соц. мережах:</p>
+                                <ul class="social__list">
+                                    <li class="social__item">
+                                        <a href="">
+                                            <img src="images/icon/instagram.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="">
+                                            <img src="images/icon/facebook.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="">
+                                            <img src="images/icon/twiter.svg" alt="">
+                                        </a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright copyright">
+                        <p>
+                            © Корда Веб агенція 2023. Всі права захищенні. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@use "./../helpers/" as *;
+
+.price{
+    margin-top: rem(150);
+    .section-title{
+        width: 100%;
+        text-transform: none;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet{
+            align-items: baseline;
+        }
+
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+    &__image{
+        width: 48%;
+
+        @include tablet{
+            width: 40%;
+            min-width: 300px;
+            margin-right: rem(30);
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+    &__description{
+        width: 48%;
+
+        @include tablet{
+            width: 53%;
+        }
+        @include mobile{
+            width: 100%;
+            margin-top: rem(30);
+        }
+    }
+    
+    &__text{
+        font-size: fluid(17,14);
+        color: var(--color-grey);
+        line-height: 1.5;
+        margin-top: rem(30);
+        margin-bottom: rem(60);
+    }
+    .button{
+        text-align: center;
+        padding: rem(22) rem(30);
+        &::before{
+           display:  none;
+        }
+        @include mobile{
+            width: 100%;
+            display: block;
+        }
+    }
+}

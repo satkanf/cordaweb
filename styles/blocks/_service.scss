@@ -1,0 +1,23 @@
+@use "./../helpers/" as *;
+.service{
+
+    @include border;
+
+    padding: rem(60) rem(30);
+    &__description{
+        text-align: center;
+    }
+    &__title{
+        font-family: var(--font-title);
+        color: var(--color-ligth-1);
+        font-size: fluid(40, 18);
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    &__except{
+        color: var(--color-grey);
+        font-size: fluid(17, 14);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}

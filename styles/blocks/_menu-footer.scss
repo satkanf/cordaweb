@@ -1,0 +1,31 @@
+@use "./../helpers/" as *;
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    align-items: flex-start;
+    padding-bottom: rem(60);
+    border-bottom: 1px solid var(--color-grey);
+    &__label{
+        font-family: var(--font-title);
+        font-size: fluid(24, 16);
+        font-weight: 400;
+        color: var(--color-grey);
+        text-transform: lowercase;
+    }
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: rem(60);
+        font-size: fluid(16, 14);
+        font-weight: 400;
+        color: var(--color-ligth-1);
+        margin-top: rem(30);
+    }
+    &__link{
+        &:hover{
+            color: var(--color-accent);
+            transition: .2s ease-in;
+        }
+    }
+}

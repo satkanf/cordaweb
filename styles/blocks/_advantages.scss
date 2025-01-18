@@ -1,0 +1,52 @@
+@use "../helpers/" as *;
+
+.advantages{
+    &__wrapper{
+
+        @include border;
+
+        padding: rem(60) rem(50);
+        margin-top: rem(150);
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: rem(60);
+        margin-top: rem(90);
+
+        @include tablet{
+            flex-direction: column;
+        }
+    }
+    .card{
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        
+        &__description{
+            width: 70%;
+
+            @include mobile{
+                width: 100%;
+            }
+        }
+        &__title{
+            margin-top: rem(33);
+
+            @include tablet{
+                margin-top: 0;
+            }
+        }
+
+
+        @include tablet{
+            width: 100%;
+        }
+
+        @include mobile{
+           flex-direction: column;
+           row-gap: rem(33);
+        }
+    }
+}

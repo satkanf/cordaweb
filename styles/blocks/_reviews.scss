@@ -1,0 +1,51 @@
+@use "./../helpers/" as *;
+
+.reviews{
+    margin-top: rem(150);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(4);
+    .section-title{
+        @include tablet{
+            width: 40%;
+        }
+    }
+    &__slider{
+        padding-top: rem(110);
+        padding-left: rem(1);
+        padding-right: rem(1);
+        @include mobile-s{
+            padding-top: rem(60);
+         }
+    }
+    .slider-arrows{
+        bottom: 87%;
+        left: calc(100% - rem(211));
+        width: rem(210);
+        column-gap: 0;
+        @include tablet{
+            bottom: 80%;
+        }
+        @include mobile-s{
+            display: none;
+        }
+     }
+     .button-tr{
+        position: absolute;
+        bottom: 87%;
+        right: rem(280);
+        @include tablet{
+            bottom: 81%;
+        }
+
+        @include mobile{
+            right: none;
+            left: 0;
+            width: auto;
+        }
+        @include mobile-s{
+           width: 100%;
+           bottom: -20%;
+        }
+     }
+}

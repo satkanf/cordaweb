@@ -1,0 +1,23 @@
+@use "../helpers/" as *;
+
+.cases{
+    margin-top: rem(150);
+    .slider{
+        overflow: hidden;
+        h3{
+            font-size: fluid(32, 18);
+            font-weight: 600;
+            color: var( --color-ligth-1);
+            margin-bottom: rem(30);
+        }
+        P{
+            font-size: fluid(18, 14);
+            font-weight: 400;
+            color: var( --color-grey);
+            line-height: 1.5;
+            &:not(:last-child){
+                margin-bottom: rem(20);
+            }
+        }
+    }
+}

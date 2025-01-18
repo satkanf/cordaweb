@@ -1,0 +1,89 @@
+@use "../helpers/" as *;
+
+.hero{
+    padding-top: rem(140);
+
+    @include mobile{
+        padding-top: rem(30);
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include tablet{
+            flex-direction: column;
+        }
+       
+    }
+    &__title{
+        width: 50%;
+        font-family: var(--font-title);
+        font-size: fluid(90, 40);
+        font-weight: 600;
+        line-height: 1.1;
+        color:  var(--color-ligth-1);
+        text-align: left;
+        span{
+            color: var(--color-accent);
+        }
+
+        @include laptop{
+           width: 45%;
+        }
+
+        @include tablet{
+            width: 100%;
+            padding-left: rem(30);
+        }
+
+        @include mobile{
+            padding-left: 0;
+        }
+    }
+    &__description{
+        width: 50%;
+        padding: rem(30);
+
+        @include laptop{
+           width: 55%;
+        }
+
+        @include tablet{
+            width: 100%;;
+        }
+
+        @include mobile{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__text{
+        font-size: fluid(20, 14);
+        font-weight: 300;
+        line-height: 1.5;
+        color:  var(--color-ligth-1);
+        text-align: left;
+        margin-bottom: rem(60);
+        p{
+            &:not(:last-child){
+                margin-bottom: rem(20);
+            }
+        }
+        @include laptop{
+            margin-bottom: rem(40);
+        }
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: rem(30);
+
+        @include mobile{
+            flex-direction: column;
+            row-gap: rem(30);
+            align-items: flex-start;
+        }
+    }
+}

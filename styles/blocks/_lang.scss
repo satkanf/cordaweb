@@ -1,0 +1,30 @@
+@use "../helpers/" as *;
+
+.lang{
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 20px;
+    }
+    &__item{
+        color: var(--color-grey);
+        font-size: fluid(16, 14);
+        position: relative;
+        font-weight: 400;
+        &:not(:last-child){
+            &::before{
+                content: "";
+                width: 2px;
+                height: 100%;
+                background-color: var(--color-grey);
+                position: absolute;
+                top: 0;
+                right: -11px;
+            }
+        }
+    }
+    .is-active{
+        color: var(--color-accent);
+    }
+}

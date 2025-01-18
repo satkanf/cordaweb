@@ -1,0 +1,15 @@
+@use "./../helpers/" as *;
+
+.steps{
+    margin-top: rem(150);
+    .section-title{
+        width: 30%;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: rem(60);
+        margin-top: rem(90);
+    }
+}

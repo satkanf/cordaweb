@@ -1,0 +1,39 @@
+@use "../helpers/" as *;
+
+
+.header{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom-left-radius: rem(16);
+        border-bottom-right-radius: rem(16);
+        box-shadow: 0 0 0 2px var(--color-grey);
+        padding: rem(15) rem(30);
+        column-gap: rem(20);
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+
+       
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40%;
+        column-gap: rem(60);
+
+        @include laptop{
+            column-gap:rem(30);
+
+        }
+        @include tablet{
+            display: none;
+            
+        }
+    }
+}

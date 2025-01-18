@@ -1,0 +1,37 @@
+@use "../helpers/" as *;
+
+
+.theme{
+    &__list{
+
+        @include border;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(70);
+        height: rem(40);
+
+    }
+    &__item{ 
+        width: rem(32);
+        height: rem(32);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .icon-theme-dark,.icon-theme-light{
+        stroke: var(--color-grey);
+    }
+    .theme-dark.is-active{
+       background-color: #fff;
+    }
+    .theme-light.is-active{
+        background-color: #fff;
+       .icon-theme-light{
+            stroke: var( --color-dark);
+       }
+    }
+}

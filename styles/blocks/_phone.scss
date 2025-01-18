@@ -1,0 +1,22 @@
+@use "../helpers/" as *;
+
+.phone{
+    font-size: fluid(16, 14);
+    color: var( --color-ligth-1);
+    font-weight: 500;
+    position: relative;
+    padding-left: 42px;
+    &::before{
+        @include square(32px);
+
+        content: "";
+        position: absolute;
+        top: -25%;
+        left: 0;
+        border-radius: 50%;
+        background-color: var(--color-grey);
+        background-image: url('./../images/icon/phone.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

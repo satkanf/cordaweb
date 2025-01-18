@@ -1,0 +1,53 @@
+@use "../helpers/" as *;
+
+.button{
+    font-size: rem(16);
+    font-weight: 500;
+    color: var( --color-ligth-1);
+    padding: rem(22) rem(60) rem(22) rem(30);
+    background-position: 0 center;
+    border-radius: rem(40);
+    border: none;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: rem(24);
+        // transform: translateX(-50%);
+        width: rem(20);
+        height: rem(20);
+        transform: translateY(-40%);
+        background-image: url("../../images/icon/btn-arrow-light.svg");
+        background-repeat: no-repeat;
+        background-size: rem(20) rem(20);
+
+        @include mobile{
+            right: rem(60);
+        }
+    }
+
+    @include mobile{
+
+        width: 100%;
+        padding: rem(18) rem(60) rem(18) rem(24);
+    }
+}
+
+.button-bg{
+    background-color: var(--color-accent);
+    &:hover{
+        background-color: var(--color-hover);
+        transition: .2 ease-in;
+    }
+}
+
+.button-tr{
+    background-color: var(--color-dark);
+    box-shadow: 0 0 0 1px var(--color-accent);
+    text-align: center;
+    &:hover{
+        box-shadow: 0 0 0 2px var(--color-accent);
+        transition: .2 ease-in;
+    }
+}

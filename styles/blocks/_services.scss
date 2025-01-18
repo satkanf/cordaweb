@@ -1,0 +1,109 @@
+@use "./../helpers/" as *;
+
+.services{
+    margin-top: rem(150);
+    .section-subtitle{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .section-title{
+        text-align: center;
+        width: 100%;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: rem(90);
+        row-gap: rem(60);
+
+        @include tablet{
+            flex-direction: column;
+        }
+
+    }
+    &__item{
+        width: 48%;
+        &:last-child{
+            width: 100%;;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .service__image{
+                width: 48%;
+
+                @include mobile{
+                    width: 100%;
+                }
+            }
+            .service__except{
+                @include mobile{
+                    width: 100%;
+                }
+            }
+            .service__description{
+                width: 48%;
+                margin-top: 0;
+                align-items: baseline;
+
+                @include mobile{
+                    width: 100%;
+                }
+            }
+            .section-subtitle{
+                text-align: left
+            }
+            .service__title{
+                text-align: left;
+                width: 50%;
+
+            }
+            .button{
+                margin-top: rem(60);
+            }
+
+        }
+        
+        @include tablet{
+            width: 100%;;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+    .service{
+        &__description{
+            margin-top: rem(60);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include tablet{
+                width: 57%;
+                justify-content: flex-start;
+            }
+
+            @include mobile{
+                width: 100%;;
+            }
+        }
+        &__except{
+            margin-top: rem(30);
+        }
+        &__image{
+
+            @include tablet{
+                width: 40%;
+                margin-right: rem(30);
+            }
+
+            @include mobile{
+                width: 100%;;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@use "./../helpers/" as *;
+.social{
+    display: flex;
+    align-items: center;
+    &__label{
+        font-family: var(--font-title);
+        font-size: fluid(24, 16) ;
+        font-weight: 400;
+        color: var(--color-grey);
+        text-transform: lowercase;
+    }
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: rem(15);
+    }
+    &__item{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-grey);
+            border-radius: 50%;
+            width: rem(60);
+            height: rem(60);
+            &:hover{
+                background-color: var(--color-accent);
+                transition: .2s ease-in;
+            }
+        }
+    }
+}
