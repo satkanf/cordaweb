@@ -51,3 +51,70 @@
         width: 100%;
     }
 }
+.home-page{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: rem(2480);
+        top: 0;
+        left: 0;
+        background-image: url('./../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        transform: translate(-50%, -50%);
+       
+    }
+}
+.service-page{
+    position: relative;
+   padding-bottom: rem(150);
+   overflow: hidden;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: rem(2480);
+        top: 0;
+        left: 0;
+        background-image: url('./../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        transform: translate(50%, -50%);
+       
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: rem(2480);
+        top: 100%;
+        left: 0;
+        background-image: url('./../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        transform: translate(50%, -50%);
+       
+    }
+}
+.contacts-page{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: rem(2480);
+        top: 0;
+        left: 0;
+        background-image: url('./../images/bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        transform: translate(50%, -50%);
+       
+    }
+}

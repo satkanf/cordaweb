@@ -1,3 +1,5 @@
+@use './helpers/' as *;
+
 :root{
     --color-dark: #14141C;
     --color-ligth-1: #FAFAF2;
@@ -6,7 +8,14 @@
     --color-hover: #dd0067;
     --color-grey: #737380;
 
+    --margin-top: rem(150);
+
     --font-title: 'Montserrat', sans-serif;;
     --font-text: 'Inter', sans-serif;
 
+}
+
+.light-theme{
+    --color-dark: #FAFAF2;
+    --color-ligth-1: #14141C;
 }

@@ -4,6 +4,8 @@
 @use "./utils";
 @use "./global";
 
+
+@use './blocks/animate-main';
 @use "./blocks/buttons";
 @use "./blocks/logo";
 @use "./blocks/menu";
@@ -28,3 +30,8 @@
 @use "./blocks/footer";
 @use "./blocks/menu-footer";
 @use "./blocks/social";
+@use "./blocks/modals";
+@use "./blocks/service-single";
+@use "./blocks/price-card";
+@use "./blocks/breadcrumb";
+@use "./blocks/contact-page";

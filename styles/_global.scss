@@ -1,5 +1,9 @@
 @use "./helpers/" as *;
 
+
+html{
+    scroll-timeline: --animate-service block;
+}
 body{
     background-color: var(--color-dark);
     font-family: var(--font-text);
@@ -17,4 +21,10 @@ h1,h2,h3{
 }
 ::-webkit-scrollbar-thumb {
     background: var(--color-accent); 
+}
+input[type="checkbox"]{
+    appearance: none;
+}
+main{
+    padding-bottom: rem(150);
 }
