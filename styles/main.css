@@ -1421,6 +1421,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.25rem;
+  overflow: hidden;
 }
 @media (width <= 64.06125rem) {
   .reviews .section-title {
@@ -1478,7 +1479,7 @@ main {
 }
 @media (width <= 30.06125rem) {
   .reviews .slider {
-    overflow: hidden;
+    overflow: visible;
   }
 }
 
