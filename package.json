@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.83.1"
+    "sass": "^1.83.1",
+    "scrollissimo": "^0.7.0"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
