@@ -10,6 +10,30 @@ $(".dropdown").hover(function () {
     })
   })
 
+
+document.querySelectorAll('.btn-request').forEach(function(item){
+  item.addEventListener('click', () => {
+    document.querySelector('.modal-bg').classList.add("modal__active");
+    document.querySelector(".modal-request").classList.add("modal__active");
+  })
+
+document.querySelectorAll('.modal__close').forEach(function(item){
+  item.addEventListener("click", () => {
+    document.querySelector('.modal-bg').classList.remove("modal__active");
+    document.querySelector(".modal-request").classList.remove("modal__active");
+    document.querySelector(".modal__review").classList.remove("modal__active");
+  })
+})
+
+document.querySelector('.leave-review').addEventListener('click', () =>{
+  document.querySelector('.modal-bg').classList.add("modal__active");
+  document.querySelector(".modal__review").classList.add("modal__active");
+})
+
+
+})
+
+  
   new Swiper(".cases__slider",{
     navigation: {
       nextEl: '.slider__next',
@@ -23,6 +47,10 @@ $(".dropdown").hover(function () {
     centerInsufficientSlides: true,
     centeredSlides: true,
     loop: true,
+    pagination:{
+      el: '.slider-pagination',
+      type: 'fraction'
+    }
   });
 
   new Swiper(".reviews__slider",{
@@ -47,4 +75,15 @@ $(".dropdown").hover(function () {
      
     }
   });
- 
+
+const bodyElement = document.querySelector('body');
+const darkTheme = document.querySelector('.theme-dark');
+const lightTheme = document.querySelector('.theme-light');
+
+lightTheme.addEventListener('click', () =>{
+  bodyElement.classList.add('light-theme');
+})
+
+darkTheme.addEventListener('click', () =>{
+  bodyElement.classList.remove('light-theme');
+})
