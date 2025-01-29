@@ -2,7 +2,7 @@
 .service{
 
     @include border;
-
+    background-color: var(--color-dark);
     padding: rem(60) rem(30);
     &__description{
         text-align: center;

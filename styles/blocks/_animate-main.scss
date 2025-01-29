@@ -1,0 +1,44 @@
+@use "./../helpers/" as *;
+
+.animate-service{
+   
+    &:nth-child(1){
+        transform: translateX(-150%);
+    }
+    &:nth-child(2){
+        transform: translateX(150%);
+    }
+    &:nth-child(3){
+        transform: translateX(-150%);
+    }
+    &:nth-child(4){
+        transform: translateX(150%);
+    }
+    &:nth-child(5){
+        transform: translateX(-150%);
+    }
+    &__active{
+        &:nth-child(1){
+            transform: translateX(0);
+            transition: transform .8s;
+        }
+        &:nth-child(2){
+            transform: translateX(0);
+            transition: transform .8s;
+        }
+        &:nth-child(3){
+            transform: translateX(0);
+            transition: transform .8s;
+        }
+        &:nth-child(4){
+            transform: translateX(0);
+            transition: transform .8s;
+        }
+        &:nth-child(5){
+            transform: translateX(0);
+            transition: transform .8s;
+        }
+        
+    }
+    animation-timeline: --animate-service;
+}

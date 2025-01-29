@@ -45,7 +45,12 @@
         }
         @include mobile-s{
            width: 100%;
-           bottom: -20%;
+           bottom: -25%;
+        }
+     }
+     .slider{
+        @include mobile-s{
+            overflow: visible;
         }
      }
 }

@@ -10,14 +10,24 @@
         justify-content: flex-start;
         column-gap: rem(60);
         // width: rem(1300);
+        @include laptop{
+            column-gap: rem(40);
+        }
     }
     &__image{
         width: rem(710);
-        // max-height: rwm(610);
+        
+        @include laptop{
+            width: 64%;
+        }
     }
     &__description{
        width: 40%;
        position: relative;
+
+       @include laptop{
+        width: 33%;
+    }
     }
     &__arrows{
         width: rem(235);
@@ -27,7 +37,7 @@
         column-gap: rem(95);
         position: absolute;
         left: rem(770);
-        bottom: 0;
+        bottom: 1px;
         &__item{
             display: block;
             width: rem(70);
@@ -38,7 +48,10 @@
             &:hover{
                 box-shadow: 0 0 0 1px var(--color-accent);
             }
+
+            
         }
+       
     
     }
     &__prev{
@@ -57,10 +70,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        column-gap: rem(95);
+        // column-gap: rem(95);
         position: absolute;
         left: rem(770);
-        bottom: 0;
+        bottom: 1px;
         z-index: 1001;
         &__item{
             display: block;
@@ -72,5 +85,26 @@
             &:hover{
                 box-shadow: 0 0 0 1px var(--color-accent);
             }
+            @include laptop{
+                width: rem(50);
+                height: rem(50);
+            }
         }
+        @include laptop{
+            left: 68%;
+        }
+}
+.slider-pagination{
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(10);
+    font-family: var(--font-title);
+    color: var(--color-grey);
+    font-size: fluid(28, 16);
+    font-weight: 600;
+    width: 30%;
+    margin: o auto;
+    .swiper-pagination-current{
+        color: var(--color-accent);
+    }
 }

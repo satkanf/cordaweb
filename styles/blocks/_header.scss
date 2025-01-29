@@ -2,6 +2,7 @@
 
 
 .header{
+    
     &__wrapper{
         display: flex;
         align-items: center;
@@ -11,6 +12,9 @@
         box-shadow: 0 0 0 2px var(--color-grey);
         padding: rem(15) rem(30);
         column-gap: rem(20);
+        background-color: var(--color-dark);
+        position: relative;
+        z-index: 1;
     }
     &__left{
         display: flex;

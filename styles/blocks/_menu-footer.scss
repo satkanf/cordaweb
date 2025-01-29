@@ -6,6 +6,15 @@
     align-items: flex-start;
     padding-bottom: rem(60);
     border-bottom: 1px solid var(--color-grey);
+    &:not(:last-child){
+        margin-bottom: rem(30);
+    }
+    @include tablet{
+        padding-bottom: rem(30);
+    }
+    @include mobile-s{
+        width: 100%;
+    }
     &__label{
         font-family: var(--font-title);
         font-size: fluid(24, 16);
@@ -21,6 +30,15 @@
         font-weight: 400;
         color: var(--color-ligth-1);
         margin-top: rem(30);
+
+        @include laptop{
+            column-gap: rem(40);
+        }
+
+        @include tablet{
+            flex-direction: column;
+            row-gap: rem(30);
+        }
     }
     &__link{
         &:hover{

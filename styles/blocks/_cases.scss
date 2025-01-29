@@ -4,6 +4,30 @@
     margin-top: rem(150);
     .slider{
         overflow: hidden;
+        &__item{
+            @include tablet{
+                flex-direction: column;
+            }
+        }
+        &__image{
+            @include tablet{
+                width: 100%;
+                max-height: rem(400);
+            }
+            .case-img{
+                @include tablet{
+                    width: 100%;
+                    max-height: rem(400);
+                }
+            }
+            
+        }
+        &__description{
+            @include tablet{
+                width: 100%;
+                margin-top: rem(30);
+            }
+        }
         h3{
             font-size: fluid(32, 18);
             font-weight: 600;
@@ -18,6 +42,9 @@
             &:not(:last-child){
                 margin-bottom: rem(20);
             }
+        }
+        @include tablet{
+            padding-bottom: rem(100);
         }
     }
 }
